@@ -21,5 +21,7 @@ from app_menus import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('menus/', views.list_menu , name='menu-list'),
-    path('menus/', views.add_menu, name='menu-add')
+    path('menus/add/', views.add_menu, name='menu-add'),
+    path('menus/edit/', views.edit_menu , name='menu-edit'),
+    path('menus/show/', views.show_menu, name='menu-show')
 ]
