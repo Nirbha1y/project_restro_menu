@@ -9,7 +9,7 @@ class Category(models.Model):
        db_table = "restro_categories"
        ordering = ["-category_title"] 
 
-class Menus(models.Model):
+class Menu(models.Model):
     menu_title = models.CharField(max_length=100)
     menu_price = models.FloatField(default=0.00)
     menu_ingredient = models.CharField(max_length=100)
@@ -24,7 +24,7 @@ class Menus(models.Model):
         db_table = "restro_menus"
         ordering = ["-menu_title"]
 
-
+       
 
 
 
